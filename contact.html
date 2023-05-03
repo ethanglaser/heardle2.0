@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact</title>
+</head>
+<body>
+    <h1>Contact</h1>
+    {% if message_sent %}
+        <p>Thank you for your message!</p>
+    {% endif %}
+    <form action="/contact" method="POST">
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" cols="50"></textarea><br>
+        <input type="submit" value="Send">
+    </form>
+</body>
+</html>
